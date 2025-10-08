@@ -1,0 +1,86 @@
+ 📰 Fake News Classifier using NLP & Machine Learning
+
+This project builds a **Fake News Detection System** using Natural Language Processing (NLP) and **Logistic Regression**.
+It identifies whether a given news article is **FAKE** or **REAL** based on its textual content.
+
+
+
+ 📊 Project Overview
+
+The script performs the following steps:
+
+1. Loads the dataset containing news titles, text, and labels.
+2. Cleans and preprocesses the text data (tokenization, stopword removal, stemming, punctuation removal).
+3. Combines the title and article body into a single text column.
+4. Converts text into numerical features using **TF-IDF Vectorization**.
+5. Trains a **Logistic Regression** model.
+6. Evaluates the model with **accuracy score**, **classification report**, and **confusion matrix**.
+
+---
+
+## 🧰 Technologies Used
+
+* **Python 3.x**
+* **NLTK**
+* **Scikit-learn**
+* **Pandas**
+* **Matplotlib**
+* **Seaborn**
+
+---
+ 📦 Installation & Setup
+
+1. Clone this repository:
+
+
+   git clone <your-repo-url>
+   cd <repo-folder>
+   ```
+
+2. Install dependencies:
+
+   pip install pandas numpy scikit-learn nltk matplotlib seaborn
+   ```
+
+3. Download NLTK stopwords (if not already):
+
+   import nltk
+   nltk.download('stopwords')
+   ```
+
+4. Ensure your dataset is located at:
+
+   data/fake_news.csv
+   ```
+
+5. Run the classifier:
+   python fake_news_classifier.py
+   ```
+
+---
+
+## 📈 Output
+1. Accuracy Score**
+2. Classification Report**
+3. Confusion Matrix** (visualized as a heatmap)
+
+
+📁 Project Structure
+
+├── fake_news_classifier.py   # Main classifier script
+├── data/
+│   └── fake_news.csv         # Input dataset
+└── README.md                 # Project documentation
+ ⚙️ Model Details
+
+* **Algorithm:** Logistic Regression
+* **Vectorization:** TF-IDF
+* **Preprocessing:** Lowercasing, punctuation removal, stopword filtering, stemming
+* **Train-Test Split:** 80-20
+
+ ✨ Future Improvements
+
+* Use advanced models (e.g., Naive Bayes, Random Forest, or Transformers like BERT)
+* Add real-time fake news detection with a web interface
+* Include dataset balancing and hyperparameter tuning
+
