@@ -33,8 +33,9 @@ The script performs the following steps:
 1. Clone this repository:
 
 
-   git clone <your-repo-url>
-   cd <repo-folder>
+   git clone https://github.com/Hashir4m4/fake-news-classifier.git
+
+   cd fake-news-classifer
    ```
 
 2. Install dependencies:
